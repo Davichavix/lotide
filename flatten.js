@@ -24,10 +24,10 @@ const flatten = function(nestArr) {
         res.push(nestArr[i][j]);
       }
     } else {
-      res.push(nestArr[i])
+      res.push(nestArr[i]);
     }
   }
   return res;
-}
+};
 
 console.log(flatten([1, 2, [3, 4], 5, [6]]));
