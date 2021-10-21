@@ -25,6 +25,6 @@ const without = function(sourceArr, itemtoRemove) {
     }
   }
   return res;
-}
+};
 
 console.log(without([1, 2, 3], [1]));
