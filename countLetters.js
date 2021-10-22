@@ -1,3 +1,4 @@
+// ACTUAL FUNCTION
 const countLetters = function(string) {
   let strObj = {};
   for (const letter of string) {
@@ -12,4 +13,5 @@ const countLetters = function(string) {
   return strObj;
 };
 
+// TEST CODE
 console.log(countLetters("lighthouse in the house"));

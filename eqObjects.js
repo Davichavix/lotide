@@ -6,10 +6,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const head = function(testarray){
-  return testarray[0];
+const eqObjects = function(object1, object2) {
+  
 }
-
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-console.log(head([[1,2],2,3]));
