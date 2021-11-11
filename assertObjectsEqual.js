@@ -39,3 +39,5 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 assertObjectsEqual({1:[2,3],2:4},{1:[2,3],2:3});
+
+module.exports = assertObjectsEqual;
