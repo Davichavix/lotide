@@ -1,3 +1,4 @@
+// function will immediately return if item is found.
 const without = function(sourceArr, itemtoRemove) {
   let checkSet = new Set(itemtoRemove);
   let res = [];
