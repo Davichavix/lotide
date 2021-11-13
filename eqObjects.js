@@ -1,21 +1,5 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🟢 Assertation Passed:, ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴 Assertation Failed:, ${actual} !== ${expected}`);
-  }
-};
-
-// ACTUAL FUNCTION
-const eqArrays = function(firstArr, secArr) {
-  if (firstArr.length !== secArr.length) return false;
-  for (let i = 0; i < secArr.length; i++) {
-    if (firstArr[i] !== secArr[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+// Function used with function eqObjects to compare if arrays equal
+const eqArrays = require("./eqArrays");
 
 const eqObjects = function(object1, object2) {
   for (keys in object2) {
@@ -37,8 +21,4 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-// TEST CODE
-const cd = { c: "1", d: ["2", 3, 4] };
-const dc = { d: ["2", 3], c: "1" };
-const cd2 = { c: "1", d: ["2", 3, 4] };
-console.log(eqObjects(cd, cd2));
+module.exports = eqObjects;

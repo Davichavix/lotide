@@ -1,11 +1,4 @@
-// TESTING FUNCTION
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`🟢 Assertation Passed:, ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴 Assertation Failed:, ${actual} !== ${expected}`);
-  }
-};
+
 
 const eqArrays = function(firstArr, secArr) {
   if (firstArr.length !== secArr.length) return false;
@@ -33,10 +26,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-// TEST CODE
-console.log(letterPositions("hello"));
-let letterIndx = letterPositions("hello");
-assertArraysEqual(letterIndx["h"],[0]);
-assertArraysEqual(letterIndx["e"],[1]);
-assertArraysEqual(letterIndx["l"],[2 , 3]);
-assertArraysEqual(letterIndx["o"],[4]);
+module.exports = letterPositions;

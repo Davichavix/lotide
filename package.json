@@ -14,7 +14,7 @@
     "url": "git+https://github.com/Davichavix/lotide.git"
   },
   "author": {
-    "name" : "David Chan"
+    "name": "David Chan"
   },
   "license": "ISC",
   "bugs": {
@@ -24,5 +24,9 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.1.3"
+  },
+  "dependencies": {
+    "lotide": "^1.0.1",
+    "my-package": "*"
   }
 }
